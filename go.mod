@@ -255,3 +255,4 @@ require (
 )
 
 replace github.com/xtls/xray-core v1.260930.0 => github.com/wyx2685/xray-core v0.0.0-20260930151924-e087e74a1bf2
+replace github.com/xtls/reality => github.com/xtls/reality v0.0.0-20260908045812-e1986a4d31ca
