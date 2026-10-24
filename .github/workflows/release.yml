@@ -108,7 +108,9 @@ jobs:
 
       - name: Get project dependencies
         run: |
+          GOEXPERIMENT=jsonv2 go mod tidy
           go mod download
+          go list -m github.com/xtls/xray-core github.com/xtls/reality
       - name: Get release version
         if: ${{ github.event_name == 'release' }}
         run: |
